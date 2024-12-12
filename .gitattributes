@@ -1,0 +1,18 @@
+# Normalize line endings for text files
+* text=auto
+
+# Force CRLF for specific files (like batch scripts)
+*.bat text eol=crlf
+
+# Force LF for bash scripts (if you use them)
+*.sh text eol=lf
+
+# Explicitly handle JSON files
+*.json text
+# Handle line endings for JSON files
+*.json text eol=lf
+
+# Specify binary files to exclude from normalization
+*.png binary
+*.jpg binary
+*.gif binary

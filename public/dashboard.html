@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DashBoard html</title>
+  <link rel="stylesheet" href="styles/dashboard.css">
+ 
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#"><span class="title">TECHJALI AFYA</span></a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Services</a>
+        <div class="dropdown-content">
+          <a href="#">Consultation</a>
+          <a href="#">Follow-up</a>
+          <a href="#">Emergency</a>
+        </div>
+      </li>
+      <li class="hideOnMobile"><a href="index.html">My Appointments</a></li>
+      <li class="hideOnMobile"><a href="aboutus.html">My Doctors</a></li>
+      
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="appointments-section">
+      <h1>Your Appointments</h1>
+      <ul id="appointmentList"></ul>
+      <h2>Book an Appointment</h2>
+      <fieldset>
+        <legend>Appointment</legend>
+      <form id="appointmentForm" class="appointmentForm">
+        <label for="doctor_id">Doctor ID:</label>
+        <input type="number" id="doctor_id" name="doctor_id" required>
+        <label for="doctor_id">Service:</label>
+        <input type="text" id="service" name="service" required>
+        
+        <label for="appointment_date">Date:</label>
+        <input type="date" id="appointment_date" name="appointment_date" required>
+        
+        <label for="appointment_time">Time:</label>
+        <input type="time" id="appointment_time" name="appointment_time" required>
+        
+        <button type="submit">Book Appointment</button>
+      </form>
+    </fieldset>
+    </div>
+    <div class="profile-section">
+      <h2>Your Profile</h2>
+      <div class="profile-container">
+        <img src="path/to/profile-image.jpg" alt="Profile Image" class="profile-image" id="profileImage">
+        <input type="file" id="imageUpload" accept="image/*" class="image-upload">
+    </div>
+    <div id="profileInfo" class="profileInfo">
+        <p><strong>Name:</strong> <span id="userName">Loading...</span></p>
+        <p><strong>Email:</strong> <span id="userEmail">Loading...</span></p>
+        <p><strong>Membership Status:</strong> <span id="userMembership">Loading...</span></p>
+    </div>
+        
+      <div class="doctor-history">
+        <h3>Doctor Visit History</h3>
+        <div class="doctor-item">
+          <p><strong>Doctor:</strong> Dr. Smith</p>
+          <p><strong>Date:</strong> January 15, 2023</p>
+        </div>
+        <div class="doctor-item">
+          <p><strong>Doctor:</strong> Dr. Johnson</p>
+          <p><strong>Date:</strong> February 20, 2023</p>
+        </div>
+        <!-- More doctor history entries can be added here -->
+      </div>
+      <div class="edit-form">
+        <h3>Edit Your Info</h3>
+        <form id="editProfileForm">
+          <label for="edit_name">Edit Name:</label>
+          <input type="text" id="edit_name" placeholder="Enter new name">
+          
+          <label for="edit_email">Edit Email:</label>
+          <input type="email" id="edit_email" placeholder="Enter new email">
+          
+          <button type="submit">Update Info</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="javascript/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "telemedicine-application",
+  "version": "1.0.0",
+  "description": "My final project\r This is a web application for a an online hospital with the application users can interact with a responsive webpage that helps them to:\r Book application online\r Get follow up with doctors\r Users can create an account login and update their information\r Read about health blog post that are important for their health \r Book for an emergency ambulance and many more features",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "connect-mysql2": "^2.2.6",
+    "dotenv": "^16.4.6",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1"
+  }
+}
